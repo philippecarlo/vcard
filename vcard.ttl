@@ -1,0 +1,14 @@
+    @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+    @prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+    <https://raw.githubusercontent.com/philippecarlo/vcard/master/vcard.ttl> a vcard:Individual;
+      vcard:hasEmail <philippe_carlo@outlook.com>;
+      vcard:fn "Philippe Michiels";
+      vcard:hasAddress [ a vcard:Home;
+        vcard:country-name "Belgium";
+        vcard:locality "Edegem";
+        vcard:postal-code "2650";
+        vcard:street-address "Ter Voortlaan 26" ];
+      vcard:hasTelephone [ a vcard:Home,
+        vcard:Voice;
+        vcard:hasValue <tel:499111768> ];
+       vcard:nickname "Philippe" .
